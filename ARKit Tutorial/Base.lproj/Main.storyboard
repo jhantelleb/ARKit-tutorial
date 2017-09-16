@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARKit_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kV-Gv-Z9B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdd-n1-j8R">
+                                <rect key="frame" x="0.0" y="637" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WcD-ct-Hkx"/>
+                                    <constraint firstAttribute="width" constant="76" id="uPI-QA-wuW"/>
+                                </constraints>
+                                <state key="normal" title="Add Cube"/>
+                                <connections>
+                                    <action selector="addCube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QXr-te-7cN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVt-9l-1Qc">
+                                <rect key="frame" x="293" y="637" width="82" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2FK-vW-8fZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="ski-ko-OfD"/>
+                                </constraints>
+                                <state key="normal" title="Add Cup"/>
+                                <connections>
+                                    <action selector="addCup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cy-Mz-qiM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vdd-n1-j8R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5bH-RN-r1r"/>
+                            <constraint firstItem="9kV-Gv-Z9B" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9hZ-ft-d9S"/>
+                            <constraint firstItem="IVt-9l-1Qc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JXK-Bn-CmE"/>
+                            <constraint firstItem="vdd-n1-j8R" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KsB-qb-FTS"/>
+                            <constraint firstItem="9kV-Gv-Z9B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UCf-bm-ys8"/>
+                            <constraint firstItem="IVt-9l-1Qc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bQI-OD-wno"/>
+                            <constraint firstItem="9kV-Gv-Z9B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yRU-pu-Fb2"/>
+                            <constraint firstItem="9kV-Gv-Z9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yct-fq-1c8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="9kV-Gv-Z9B" id="wVI-xM-0g4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
